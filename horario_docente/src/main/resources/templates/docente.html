@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
- xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
-	<div th:insert="~{layout/cabecalho}"></div>
+<div th:insert="~{layout/cabecalho}"></div>
 
 <head>
 	
@@ -11,7 +10,7 @@
 <body>
 <div th:insert="~{layout/menu2}"></div>
 
-<form name="salvar_docente" class="form-horizontal" method="POST" action="{/salvar_docente}" th:object="${docenteEntity}">
+<form name="salvar_docente" class="form-horizontal" method="POST" th:action="@{/salvar_docente}" th:object="${docenteEntity}">
 
 <h1>Wave box docente</h1>
 
@@ -47,6 +46,7 @@
 <div class="mb-3">
 	<button type="submit" class="btn btn-success form-control">Salvar</button>
 </div>
+</form>
 
 </body>
 </html>

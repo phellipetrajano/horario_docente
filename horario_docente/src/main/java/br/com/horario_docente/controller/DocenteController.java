@@ -28,7 +28,13 @@ public ModelAndView save (
 		@ModelAttribute("docenteEntity") DocenteEntity docenteEntity,
 		RedirectAttributes atributes) throws Exception
 {
-System.out.println("Nome :" + docenteEntity.getNome());
+	System.out.println("Nome :" + docenteEntity.getNome());
+	System.out.println("Sobrenome:" + docenteEntity.getSobrenome());
+	System.out.println("cpf :" + docenteEntity.getCpf());
+	System.out.println("email:" + docenteEntity.getEmail());
+	
+		
+
 ModelAndView mv = new ModelAndView("redirect:/docente");
 /*atributes.addFlashAttribute("mensagem", docenteService.save(docenteEntity));
 */
